@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="google-signin-client_id" content="255692711043-09kba097i3ks12m3eokqinlugumks0mg.apps.googleusercontent.com">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -18,9 +17,6 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-       
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
