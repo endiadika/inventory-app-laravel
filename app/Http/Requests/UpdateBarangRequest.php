@@ -5,31 +5,31 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Gate;
 
-class StoreSupplyRequest extends FormRequest
+class UpdateBarangRequest extends FormRequest
 {
-  
+   
     public function rules()
     {
         return [
             'name' => [
                 'required', 'string',
             ],
-            'telp' => [
+            'kategori' => [
                 'required', 'decimal',
             ],
-            'alamat' => [
+            'harga' => [
                 'required', 'string',
             ],
-            'barang' => [
+            'stock' => [
                 'required', 'string',
             ],
            
-        ];   
+        ];
     }
 
-   
     public function authorize()
     {
         return Gate::allows('task_access');
     }
 }
+

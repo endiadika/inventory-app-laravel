@@ -20,7 +20,7 @@
                     </div>
                 @endcan
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    <x-jet-nav-link href="{{ route('barang.index') }}" :active="request()->routeIs('barang.index')">
                         {{ __('Daftar Barang') }}
                     </x-jet-nav-link>
                 </div>

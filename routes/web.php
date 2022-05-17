@@ -23,7 +23,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('tasks', \App\Http\Controllers\TasksController::class);
-    Route::resource('barang', \App\Http\Controllers\SupplyController::class);
+    Route::resource('barang', \App\Http\Controllers\BarangController::class);
     Route::resource('supply', \App\Http\Controllers\SupplyController::class);
     Route::resource('users', \App\Http\Controllers\UsersController::class);
 });
