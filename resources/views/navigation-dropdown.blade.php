@@ -15,10 +15,15 @@
                 @can('task_access')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-jet-nav-link href="{{ route('tasks.index') }}" :active="request()->routeIs('tasks.*')">
-                            Daftar Barang
+                            Tasks List
                         </x-jet-nav-link>
                     </div>
                 @endcan
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        {{ __('Daftar Barang') }}
+                    </x-jet-nav-link>
+                </div>
                 @can('task_access')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-jet-nav-link href="{{ route('supply.index') }}" :active="request()->routeIs('supply.index')">
