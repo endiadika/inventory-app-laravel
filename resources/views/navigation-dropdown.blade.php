@@ -20,12 +20,12 @@
                     </div>
                 @endcan
                 @can('task_access')
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('tasks.index') }}" :active="request()->routeIs('tasks.*')">
-                        Supplier
-                    </x-jet-nav-link>
-                </div>
-                 @endcan
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-jet-nav-link href="{{ route('supply.index') }}" :active="request()->routeIs('supply.index')">
+                            {{ __('Supply') }}
+                        </x-jet-nav-link>
+                    </div>
+                @endcan
                 @can('user_access')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-jet-nav-link href="{{ route('users.index') }}" :active="request()->routeIs('users.*')">
