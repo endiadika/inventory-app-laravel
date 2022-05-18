@@ -18,6 +18,8 @@ class BarangController extends Controller
         $barang = Barang::all();
 
         return view('barang.index', compact('barang'));
+        
+        
     }
 
     public function create()

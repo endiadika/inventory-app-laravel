@@ -17,8 +17,8 @@ class CreateBarangsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('kategori');
-            $table->decimal('harga');
-            $table->decimal('stock');
+            $table->integer('harga');
+            $table->integer('stock');
             $table->timestamps();
             $table->softDeletes();
         });

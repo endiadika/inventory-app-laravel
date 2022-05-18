@@ -12,7 +12,7 @@ class CreateSuppliesTable extends Migration
         Schema::create('supplies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->decimal('telp');
+            $table->integer('telp');
             $table->string('alamat');
             $table->string('barang');
             $table->timestamps();

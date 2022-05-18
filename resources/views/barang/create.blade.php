@@ -12,7 +12,35 @@
                     @csrf
                     <div class="shadow overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 bg-white sm:p-6">
-                            <label for="description" class="block font-medium text-sm text-gray-700">Description</label>
+                            <label for="description" class="block font-medium text-sm text-gray-700">Nama</label>
+                            <input type="text" name="description" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                                   value="{{ old('name', '') }}" />
+                            @error('description')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                    
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <label for="description" class="block font-medium text-sm text-gray-700">No Telp</label>
+                            <input type="text" name="description" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                                   value="{{ old('description', '') }}" />
+                            @error('description')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <label for="description" class="block font-medium text-sm text-gray-700">Alamat</label>
+                            <input type="text" name="description" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
+                                   value="{{ old('description', '') }}" />
+                            @error('description')
+                                <p class="text-sm text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <label for="description" class="block font-medium text-sm text-gray-700">Barang</label>
                             <input type="text" name="description" id="description" type="text" class="form-input rounded-md shadow-sm mt-1 block w-full"
                                    value="{{ old('description', '') }}" />
                             @error('description')
@@ -30,4 +58,5 @@
             </div>
         </div>
     </div>
+    
 </x-app-layout>
