@@ -1,14 +1,14 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Supplier
+            Barang Keluar
         </h2>
     </x-slot>
 
     <div>
         <div class="max-w-6xl mx-auto py-10 sm:px-6 lg:px-8">
             <div class="block mb-8">
-                <a href="{{ route('supply.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add Supplier</a>
+                <a href="{{ route('keluar.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Tambah Barang Masuk</a>
             </div>
            
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -19,16 +19,25 @@
                 ID
                 </th>
                 <th scope="col" class="px-6 py-3">
-                Nama Supplier
+                ID Transaksi
                 </th>
                 <th scope="col" class="px-6 py-3">
-                Telp
+                Tanggal Masuk
                 </th>
                 <th scope="col" class="px-6 py-3">
-                Alamat
+                ID Barang
                 </th>
                 <th scope="col" class="px-6 py-3">
-                Kategori
+                Nama Barang
+                </th>
+                <th scope="col" class="px-6 py-3">
+                Supplier
+                </th>
+                <th scope="col" class="px-6 py-3">
+                Jumlah Masuk
+                </th>
+                <th scope="col" class="px-6 py-3">
+                Satuan Barang
                 </th>
                 <th scope="col" class="px-6 py-3">
                 <span class="sr-only">Edit</span>
@@ -41,16 +50,25 @@
                 1
                 </th>
                 <td class="px-6 py-4">
+                T-622021
+                </td>
+                <td class="px-6 py-4">
+                2022-02-02
+                </td>
+                <td class="px-6 py-4">
+                B-12
+                </td>
+                <td class="px-6 py-4">
+                Apple MacBook Pro 2021
+                </td>
+                <td class="px-6 py-4">
                 Ahmad Yunus Mujadidi
                 </td>
                 <td class="px-6 py-4">
-                085156368173
+                5
                 </td>
                 <td class="px-6 py-4">
-                Semarang
-                </td>
-                <td class="px-6 py-4">
-                VGA
+                PCS
                 </td>
                 <td class="px-6 py-4 text-right">
                 <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>

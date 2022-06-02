@@ -26,4 +26,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('barang', \App\Http\Controllers\BarangController::class);
     Route::resource('supply', \App\Http\Controllers\SupplyController::class);
     Route::resource('users', \App\Http\Controllers\UsersController::class);
+    Route::resource('keluar', \App\Http\Controllers\KeluarController::class);
+    Route::resource('masuk', \App\Http\Controllers\MasukController::class);
 });

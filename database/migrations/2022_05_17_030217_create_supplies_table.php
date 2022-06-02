@@ -10,11 +10,11 @@ class CreateSuppliesTable extends Migration
     public function up()
     {
         Schema::create('supplies', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
+            $table->id('id_supplier');
+            $table->string('nama_supplier');
             $table->integer('telp');
             $table->string('alamat');
-            $table->string('barang');
+            $table->string('kategori');
             $table->timestamps();
             $table->softDeletes();
         });
